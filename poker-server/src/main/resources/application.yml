@@ -1,0 +1,13 @@
+server:
+  port: 7001   # HTTP访问端口
+
+spring:
+  application:
+    name: poker-server
+  # 配置devtools
+  devtools :
+    restart : 
+      additional-paths : poker-server/src/main/java    # 热部署更新目录
+      #exclude : static/**                        # 热部署不更新的目录
+logging:
+  config: classpath:logback.xml
